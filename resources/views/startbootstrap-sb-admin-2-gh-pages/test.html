@@ -1,0 +1,116 @@
+html
+Salin kode
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .sidebar {
+            background-color: #007bff;
+            padding: 20px;
+            height: 100vh;
+            color: white;
+        }
+        .sidebar .nav-link {
+            color: white;
+        }
+        .sidebar .nav-link.active {
+            background-color: #0056b3;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h5>Admin Bidang Kebudayaan</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Informasi & Statistik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kelola Informasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kelola Statistik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notifikasi</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 content">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard E-Gov | Malang Dashboard Radar V1</h1>
+                </div>
+
+
+                <button type="button" class="btn btn-primary mt-3">+ tambah data</button>
+
+                
+                <div class="nav nav-tabs">
+                    <a class="nav-item nav-link active" href="#">+ NEW INFORMATION</a>
+                    <a class="nav-item nav-link" href="#">UPCOMING EVENT</a>
+                    <a class="nav-item nav-link" href="#">ONGOING EVENT</a>
+                    <a class="nav-item nav-link" href="#">COMPLETED EVENT</a>
+                </div>
+                <table class="table table-bordered mt-3">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>No.</th>
+                            <th>Poster</th>
+                            <th>Nama Festival</th>
+                            <th>Tanggal dan Waktu</th>
+                            <th>Lokasi</th>
+                            <th>Partisipasi</th>
+                            <th>Harga Tiket</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td><img src="path_to_poster1.jpg" alt="Poster 1" width="50"></td>
+                            <td>Malang Flower Carnival</td>
+                            <td>15 September 2019</td>
+                            <td>Sepanjang Jalan Ijen, Malang</td>
+                            <td>Semua Umur</td>
+                            <td>Free</td>
+                            <td><span class="badge badge-success">MENUNGGU VALIDASI</span></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td><img src="path_to_poster2.jpg" alt="Poster 2" width="50"></td>
+                            <td>Malang Night Culture & Art</td>
+                            <td>17 November 2018, 18:00 WIB</td>
+                            <td>Jalan Simpang Balapan, Malang</td>
+                            <td>Semua Umur</td>
+                            <td>Free</td>
+                            <td><span class="badge badge-success">MENUNGGU VALIDASI</span></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td><img src="path_to_poster3.jpg" alt="Poster 3" width="50"></td>
+                            <td>Pasar Beautiful</td>
+                            <td>15 April 2020, 09:00 - 21:00 WIB</td>
+                            <td>Gedung DPRD Kota Malang</td>
+                            <td>Semua Umur</td>
+                            <td>Free</td>
+                            <td><span class="badge badge-success">MENUNGGU VALIDASI</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
